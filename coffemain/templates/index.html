@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CoffeeMan</title>
+  <style>
+    /*coldCoffee css*/
+    .coldCoffee {
+      width:65%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    form {
+      max-width: 400px;
+      background-color: #D2B48C;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #8B4513;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 10px;
+    }
+
+    .purchase-btn {
+      background-color: #8B4513;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .purchase-btn:hover {
+      background-color: #A0522D;
+    }
+    /* CSS styles for the webpage */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: brown;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    a {
+      display:flex;
+      flex-direction: column;
+      font: bold 11px Arial;
+      text-decoration: none;
+      background-color: #EEEEEE;
+      color: #333333;
+      padding: 2px 6px 2px 6px;
+      border-top: 1px solid #CCCCCC;
+      border-right: 1px solid #333333;
+      border-bottom: 1px solid #333333;
+      border-left: 1px solid #CCCCCC;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      width:80%;
+      height:92vh;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .products {
+      flex: 1;
+      padding: 10px;
+      background-color: #f5f5f5;
+    }
+
+    .products ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .intro {
+      flex: 2;
+      padding: 20px;
+    }
+
+    footer {
+      background-color: brown;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CoffeeMan</h1>
+  </header>
+
+  <div class="container">
+    <div class="products">
+      <h2>Coffee in stock</h2>
+      <ul>
+        <a href="/">
+        home</a>
+        <a href="/greenCoffe">
+          Green Coffee</a>
+        <a href="/americano">Americano</a>
+        <a href="/caffeMac">Caffe macchiato</a>
+        <a href="/coldCoffe">Cold brew</a>
+        <!-- Add more products as needed -->
+      </ul>
+    </div>
+
+    {% block intro %}{% endblock intro %}
+  </div>
+
+  <footer>
+    <h2>About Us</h2>
+    <p>Hello, I am Awez Ahmed Khan a Computer Science student at MJ college at Hyderabad and welcome to my django project</p>
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: awezkhan6889@gmail.com</p>
+        <p>Phone: NULL</p>
+      </div>
+    </footer>
+
+</footer>
+</body>
+</html>
